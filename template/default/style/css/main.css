@@ -1,0 +1,203 @@
+@import 'fonts/fonts.css';
+html, body{
+	height: 100%;
+	font-family: 'HelveticaNeue-Medium';
+}
+body{
+	margin: 0;
+	padding: 0;
+	background: rgba(90,3,104,1);
+background: -moz-linear-gradient(left, rgba(90,3,104,1) 5%, rgba(115,16,131,1) 25%, rgba(137,28,156,1) 43%, rgba(137,28,156,1) 51%, rgba(137,28,156,1) 61%, rgba(117,17,133,1) 78%, rgba(90,3,104,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(5%, rgba(90,3,104,1)), color-stop(25%, rgba(115,16,131,1)), color-stop(43%, rgba(137,28,156,1)), color-stop(51%, rgba(137,28,156,1)), color-stop(61%, rgba(137,28,156,1)), color-stop(78%, rgba(117,17,133,1)), color-stop(100%, rgba(90,3,104,1)));
+background: -webkit-linear-gradient(left, rgba(90,3,104,1) 5%, rgba(115,16,131,1) 25%, rgba(137,28,156,1) 43%, rgba(137,28,156,1) 51%, rgba(137,28,156,1) 61%, rgba(117,17,133,1) 78%, rgba(90,3,104,1) 100%);
+background: -o-linear-gradient(left, rgba(90,3,104,1) 5%, rgba(115,16,131,1) 25%, rgba(137,28,156,1) 43%, rgba(137,28,156,1) 51%, rgba(137,28,156,1) 61%, rgba(117,17,133,1) 78%, rgba(90,3,104,1) 100%);
+background: -ms-linear-gradient(left, rgba(90,3,104,1) 5%, rgba(115,16,131,1) 25%, rgba(137,28,156,1) 43%, rgba(137,28,156,1) 51%, rgba(137,28,156,1) 61%, rgba(117,17,133,1) 78%, rgba(90,3,104,1) 100%);
+background: linear-gradient(to right, rgba(90,3,104,1) 5%, rgba(115,16,131,1) 25%, rgba(137,28,156,1) 43%, rgba(137,28,156,1) 51%, rgba(137,28,156,1) 61%, rgba(117,17,133,1) 78%, rgba(90,3,104,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a0368', endColorstr='#5a0368', GradientType=1 );
+	display: table;
+	text-align: center;
+	width: 100%;
+}
+.clear{
+	clear:both;
+}
+.none{
+	display: none;
+}
+
+div.container{
+	display: table-cell;
+	vertical-align: middle;
+}
+article{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+main{
+	width: 62.5%;
+	height: 100%;
+	/*max-width: 1200px;*/
+	float: left;
+	text-align: center;
+}
+main div.for-img{
+	margin: 0 auto;
+	background: url(../img/fon.png) 50% 50% no-repeat;
+	background-size: 100%;
+	height: 80%;
+}
+main img{
+	max-width:100%;
+	max-height:100%;
+}
+main div.for-desc{
+	height: 10%;
+}
+main div.for-desc p{
+	color: #fff;
+	text-align:left;
+	font-size: 1vw;
+	margin: 0;
+	padding: 0 0 0 15%;
+}
+
+aside{
+	width: 37.5%;
+	height: 100%;
+	box-sizing: border-box;
+	float: left;
+	padding: 5% 0 5% 0;
+	text-align: left;
+}
+aside h2{
+	font-size: 6vw;
+	color: #fc450b;
+	margin: 0 0 10% 0;
+	font-family: 'HelveticaNeue-Black';
+}
+aside h3{
+	font-size: 3vw;
+	color: #fff;
+}
+aside div.price h1{
+	background: #fc450b;
+	text-align: center;
+	padding: 5% 0;
+	margin: 10% 0 0;
+}
+aside div.price h1{
+	font-size: 8vw;
+	color: #fff;
+}
+aside h4{
+	font-size: 2vw;
+	color: #fff;
+	text-align: center;
+}
+
+/*
+	On Vertical screen
+*/
+.vert article {
+
+}
+
+.vert article main{
+	width: 100%;
+	height: 55%;
+	/*outline: 1px solid #fff;*/
+	text-align: center;
+}
+.vert aside div.vert-desc{
+	height: 8%;
+}
+.vert aside div.vert-desc p{
+	color: #fff;
+	text-align:left;
+	font-size: 1vw;
+	margin: 0;
+	padding: 0 25% 0 15%;
+}
+
+.vert article aside{
+	width: 100%;
+	height: 40%;
+	/*outline: 1px solid #fff;*/
+	box-sizing: border-box;
+	padding: 0;
+	text-align: left;
+}
+.vert aside h2{
+	font-size: 100px;
+	margin: 0 0 5% 15%;
+}
+.vert aside h3{
+	font-size: 40px;
+	margin: 0 0 10% 15%;
+}
+.vert aside h4{
+	text-align: left;
+	margin: 2% 0 5% 15%;
+	font-size: 30px;
+}
+.vert article aside div.price{
+	width: 55%;
+}
+.vert article aside div.price h1{
+	font-size: 130px;
+}
+/*
+	On Square screen
+*/
+.square article {
+
+}
+
+.square article main{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/*outline: 1px solid #fff;*/
+	text-align: center;
+	z-index: 1;
+}
+
+.square article main div.for-img,
+.square article main {
+	text-align: right;
+}
+
+.square article main div.for-img{
+	height: 75%;
+	padding: 6% 0 0 0;
+
+}
+.square article  main div.for-desc p{
+	text-align:right;
+	padding: 0 15% 0;
+}
+
+.square article aside{
+	position: relative;
+	width: 40%;
+	height: 100%;
+	/*outline: 1px solid #fff;*/
+	box-sizing: border-box;
+	padding: 0;
+	text-align: left;
+	z-index: 2;
+}
+
+.square article aside h2{
+	padding: 35% 0 0 0;
+}
+.square article aside h2,
+.square article aside h3{
+	padding-left: 20%;
+}
+.square article aside div.price{
+	 margin: 95% 0 0 0;
+}
